@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { NavbarTopComponent } from './shared/navbar-top/navbar-top.component';
+import { FormSelectComponent } from './form-select/form-select.component';
+import { SidebarLeftComponent } from './shared/sidebar-left/sidebar-left.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarTopComponent,
+    FormSelectComponent,
+    SidebarLeftComponent
   ],
   imports: [
     BrowserModule,

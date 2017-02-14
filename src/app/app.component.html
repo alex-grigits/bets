@@ -1,20 +1,7 @@
+<app-navbar-top></app-navbar-top>
 <div class="container">
-  <div class="col-sm-4 col-sm-offset-4">
-    <h2>User Data</h2>
-    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
-      <div class="form-group">
-        <label>First Name</label>
-        <input type="text" class="form-control" name="firstName" ngModel>
-      </div>
-      <div class="form-group">
-        <label>Last Name</label>
-        <input type="text" class="form-control" name="lastName" ngModel>
-      </div>
-      <div class="form-group">
-        <label for="">Email</label>
-        <input type="text" class="form-control" name="email" ngModel>
-      </div>    
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+  <div class="row">
+    <app-sidebar-left></app-sidebar-left>
+    <app-form-select></app-form-select>
   </div>
 </div>
