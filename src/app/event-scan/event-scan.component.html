@@ -1,34 +1,34 @@
-<h2>Select Form</h2>
 <form novalidate [formGroup]="selectForm">
-  <md-card>
-    <md-card-title>Form Select</md-card-title>
-    <md-card-content>
+  <div class="card">
+    <h3>Form Select</h3>
       <div formArrayName="results">
+      <button class="btn btn-success" (click)="add()">
+        Add
+      </button>
         
         <div *ngFor="let result of results.controls; let i=index" [formGroupName]="i">
           <label class="radio-inline">Choose the result of match №{{i+1}}:</label>
 
           <label class="radio-inline" for="win{{i}}">
-            <input type="radio" id="win{{i}}" class="form-control" value="winning" formControlName="result" [checked]>
-            Winning
+            <input type="radio" id="win{{i}}" class="form-control" value="winning" formControlName="result">
+            W
           </label>          
 
           <label class="radio-inline" for="draw{{i}}">
             <input type="radio" id="draw{{i}}" class="form-control" value="drawing" formControlName="result">
-            Drawing
+            D
           </label>
           
           <label class="radio-inline" for="loss{{i}}">
             <input type="radio" id="loss{{i}}" class="form-control" value="losing" formControlName="result">
-            Losing
+            L
           </label>
           
         </div>
-      <button md-raised-button color="accent" (click)="add()">Add match</button>
 
       </div>
-      
-    </md-card-content>
-    {{ selectForm.value | json }}
-  </md-card>
-</form> 
+  </div>
+</form>
+<div class="card">
+  {{ selectForm.value | json }}
+</div> 

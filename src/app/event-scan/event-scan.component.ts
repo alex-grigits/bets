@@ -1,15 +1,13 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormControl, FormGroup, FormArray, FormBuilder } from '@angular/forms';
 
-import { MdRadioGroup, MdRadioButton } from '@angular/material';
-
 @Component({
-  selector: 'app-form-select',
-  templateUrl: './form-select.component.html',
-  styleUrls: ['./form-select.component.css'],
+  selector: 'app-event-scan',
+  templateUrl: './event-scan.component.html',
+  styleUrls: ['./event-scan.component.css'],
   //encapsulation: ViewEncapsulation.None
 })
-export class FormSelectComponent{
+export class EventScanComponent{
   selectForm: FormGroup;
   results: FormArray;
   events = ['win', 'draw', 'loss'];

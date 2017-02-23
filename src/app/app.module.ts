@@ -4,29 +4,28 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { MaterialModule } from '@angular/material';
-import 'hammerjs';
-
 import { AppComponent } from './app.component';
-import { NavbarTopComponent } from './shared/navbar-top/navbar-top.component';
-import { FormSelectComponent } from './form-select/form-select.component';
-import { SidebarLeftComponent } from './shared/sidebar-left/sidebar-left.component';
-import { SettingsComponent } from './settings/settings.component';
+import { AppRouting } from './app.routing';
+import { EventScanComponent } from './event-scan/event-scan.component';
+import { StatsModule } from './stats/stats.module';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarTopComponent,
-    FormSelectComponent,
-    SidebarLeftComponent,
-    SettingsComponent
+    EventScanComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    StatsModule,
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
