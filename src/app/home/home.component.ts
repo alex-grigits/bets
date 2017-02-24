@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../shared/http.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  competitions: any[];
 
-  constructor() { }
+  constructor(private httpService: HttpService) {
+   }
 
   ngOnInit() {
+    this.httpService.getCompetition()
+      .subscribe(competition => this.competitions = competition);
   }
 
 }
