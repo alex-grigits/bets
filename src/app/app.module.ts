@@ -10,6 +10,8 @@ import { EventScanComponent } from './event-scan/event-scan.component';
 import { StatsModule } from './stats/stats.module';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HttpPipe } from './shared/http.pipe';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { NotFoundComponent } from './not-found.component';
     AppComponent,
     EventScanComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ProfileComponent,
+    HttpPipe
   ],
   imports: [
     BrowserModule,

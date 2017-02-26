@@ -1,3 +1,13 @@
 {
-  "typescript.tsdk": "./node_modules/typescript/lib"
+"typescript.tsdk": "./node_modules/typescript/lib",
+"angulardoc.repoId": "eb8b8fd8-95f0-4114-b2aa-ca22fa4a2e6f",
+"angulardoc.directoryFilter": [
+    "!typings",
+    "!node_modules",
+    "!.vscode"
+],
+"angulardoc.fileFilter": [
+    "**/!(*.*spec).ts"
+],
+"angulardoc.lastSync": 0
 }

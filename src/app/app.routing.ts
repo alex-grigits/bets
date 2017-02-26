@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { StatsComponent } from './stats/stats.component';
 import { EventScanComponent } from './event-scan/event-scan.component';
+import { ProfileComponent } from './profile/profile.component';
 import { NotFoundComponent } from './not-found.component';
 
 const routes: Routes = [
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'event-scan',
     component: EventScanComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   },
   {
     path: '**',

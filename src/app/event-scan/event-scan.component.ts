@@ -34,4 +34,8 @@ export class EventScanComponent{
   add() {
     this.results.push(this.buildGroup());
   }
+
+  onSubmit(){
+    console.log(this.selectForm.value);
+  }
 }
